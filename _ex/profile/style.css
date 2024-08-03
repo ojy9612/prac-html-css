@@ -1,0 +1,108 @@
+/* CSS Reset */
+* {
+    margin: initial;
+    padding: initial;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Design */
+
+body {
+    background-image: url(images/background.png);
+}
+
+.wrapper-contents {
+    padding: 60px 0;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.header {
+    background-image: url(images/cover.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    padding: 70px 0;
+
+    color: white;
+
+    text-align: center;
+}
+
+.header img {
+    border: 5px solid;
+    border-radius: 42% 58% 58% 42% / 50% 50% 30% 50%;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.header p {
+    border-top: 4px solid white;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.animal-contents {
+    background-color: #ddd;
+    padding: 1px; /* 마진 병합 */
+}
+
+.animal-contents h2 {
+    color: darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.animal-contents .sec {
+    background-repeat: no-repeat;
+    background-position: right 40px center;
+
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+
+    color: #999;
+}
+
+.animal-contents .sec ul li {
+    border-left: 3px solid #ddd;
+    padding: 3px 10px;
+
+    transition: all 300ms;
+}
+
+.animal-contents .sec ul li:hover {
+    color: deepskyblue;
+    border-left: 3px solid deepskyblue;
+    padding-left: 10px;
+}
+
+.animal-contents .sec.info {
+    background-image: url(images/icon-information.png);
+}
+
+.animal-contents .sec.skill {
+    background-image: url(images/icon-skills.png);
+}
+
+.footer {
+    background-color: white;
+    color: #ddd;
+    padding: 5px;
+    text-align: center;
+}

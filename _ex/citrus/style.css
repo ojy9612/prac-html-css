@@ -1,0 +1,108 @@
+body {
+    margin: unset;
+    padding: unset;
+}
+
+body {
+    background-image: url(images/bg.png);
+}
+
+.wrapper-contents {
+    width: 960px;
+    margin: 60px auto;
+}
+
+.header {
+    padding: 30px;
+    letter-spacing: 4px;
+}
+
+.header .icon {
+    background-color: black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 200px;
+}
+
+.header a:hover {
+    text-indent: -9999px;
+}
+
+.header .icon.logo {
+    background-image: url("images/logo.png");
+}
+
+.header .icon.lemon {
+    color: yellow;
+}
+
+.header .icon.lemon:hover {
+    background-image: url("images/lemon.png");
+}
+
+.header .icon.orange {
+    color: orange;
+}
+
+.header .icon.orange:hover {
+    background-image: url("images/orange.png");
+}
+
+.header .icon.jamong {
+    color: orangered;
+}
+
+.header .icon.jamong:hover {
+    background-image: url("images/jamong.png");
+}
+
+.contents {
+    background-image: url("images/contents-bg.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 500px;
+    padding: 30px 30px 100px;
+    color: #999;
+    border-radius: 40px;
+
+    line-height: 1.8;
+}
+
+.contents h2 {
+    color: #ff6600;
+}
+
+.contents h2 .jam-span {
+    vertical-align: super;
+    color: #666;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.contents pre a {
+    text-decoration: none;
+    color: #2da237;
+}
+
+.contents pre a:hover {
+    text-decoration: underline;
+    color: #2da237;
+}
+
+.contents pre strong {
+    background-color: #ff6600;
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+}
+
+.footer {
+    color: #666;
+    padding: 20px;
+    text-align: right;
+    letter-spacing: 0.4em;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- html 버전을 명시 (최신기술에 대한 내용을 작성한다는 뜻) HTML Living Standard (이전 버전은 html5)-->
+<html lang="en"> <!-- 부모요소, 자식요소, 형제요소 (요소 == 엘리먼트) -->
+    <head>
+        <title>Fruits</title>
+        <link rel="stylesheet" href="common.css">
+        <style> /* 모든 프로퍼티는 디폴트값이 정해져있으며 css를 만든 개발자에 의해 결정되었기에 브라우저마다 다르지 않음 */
+            body {
+                background-color: orange;
+                background-image: url("images/orange-bg.png");
+            }
+            div {
+                background-color: white;
+                width: 400px; /* 부모요소의 너비 기준 꽉참 */
+                height: auto; /* 자식요소의 높이 기준 자동 조절 */
+
+                margin: 100px auto;
+
+                padding: 40px;
+
+                border: 10px solid orange;
+
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+            h1 {
+                text-align: center;
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div> <!-- div 태그는 의미가 없음 h1같은 태그는 의미가 있기에 시멘틱 태그, 시멘틱 마크업 이라고 불림 -->
+            <img src="images/orange.png" alt="cat"/> <!-- src같은 부분은 속성, Attributes 라고 부름 -->
+            <h1>Orange</h1> <!-- 태그는 디자인이 아닌 의미 부여 (검색 엔진에 활용가능) -->
+            <ul> <!-- un ordered list 순서가 없는 리스트 -->
+                <li><a href="orange.html">Orange</a></li> <!-- list item --> <!-- body와 하위 상위 요소 (조상 자손 관계)-->
+                <li><a href="kiwi.html">Kiwi</a></li>
+                <li><a href="strawberry.html">Strawberry</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+body, p, ul {
+    margin: initial;
+    padding: initial;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2 {
+    margin: initial;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* ---------- */
+
+body {
+    background-image: url("images/background.png");
+}
+
+.wrapper-contents {
+    width: 800px;
+    margin: 40px auto;
+}
+
+
+.header {
+    background-size: cover;
+    background-image: url("images/cover.png");
+    text-align: center;
+    color: white;
+
+    min-height: 400px;
+
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.header img.profile {
+    width: 140px;
+    border: 6px solid;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 70px;
+}
+
+.header p {
+    border-top: 5px solid;
+    width: fit-content;
+    margin: 4px auto;
+    padding: 4px 20px;
+}
+
+
+.animal-contents {
+    background-color: #ddd;
+    padding: 12px 0;
+}
+
+.animal-contents .section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.animal-contents .section.information {
+    background-image: url("images/icon-information.png");
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+}
+
+.animal-contents .section.skill {
+    background-image: url("images/icon-skills.png");
+    background-repeat: no-repeat;
+    background-position: right 30px center;
+}
+
+.animal-contents .section h2 {
+    color: deeppink;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.animal-contents .section .list li {
+    color: #999;
+    border-left: 5px solid #ddd;
+    padding: 4px 10px;
+    transition: all .4s;
+}
+
+.animal-contents .section .list li:hover {
+    border-color: lightpink;
+    color: deeppink;
+    font-size: 18px;
+}
+
+
+.footer {
+    background-color: white;
+    text-align: center;
+}

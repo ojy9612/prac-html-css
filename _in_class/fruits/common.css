@@ -1,0 +1,28 @@
+body {
+    background-color: orange;
+    background-image: url("images/orange-bg.png");
+}
+
+div {
+    background-color: white;
+    width: 400px; /* 부모요소의 너비 기준 꽉참 */
+    height: auto; /* 자식요소의 높이 기준 자동 조절 */
+
+    margin: 100px auto;
+
+    padding: 40px;
+
+    border: 10px solid orange;
+
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+}

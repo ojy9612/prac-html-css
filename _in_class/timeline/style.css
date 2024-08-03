@@ -1,0 +1,90 @@
+body, ol {
+    margin: unset;
+    padding: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+:root {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    background-color: dodgerblue;
+}
+
+.l_wrapper {
+    max-width: 1200px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.timeline {
+    background-color: rgb(255 255 255 / .4);
+}
+
+.timeline-header h1 {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+}
+
+.timeline-contents {
+    padding-bottom: 240px;
+}
+
+.timeline-contents .timeline-list li {
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: -140px;
+}
+
+.timeline-contents .timeline-list li:nth-child(even) {
+    margin-left: auto;
+}
+
+.timeline-contents .timeline-list li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-contents .timeline-list {
+    margin: 0 -20px;
+}
+
+.timeline-contents .timeline-list .year {
+    background-color: white;
+    width: auto;
+    min-height: 400px;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+/* 960px 보다 작아졌을 때 실행 */
+@media (max-width: 960px) {
+    * {
+        transition: all .4s;
+    }
+
+    .timeline-header h1 {
+        font-size: 40px;
+        padding: 30px 0;
+    }
+
+    .timeline-contents .timeline-list li {
+        width: unset;
+        margin-bottom: 40px;
+    }
+}
