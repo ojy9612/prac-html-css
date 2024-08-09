@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .inline-float {
+                float: left;
+                background-color: lightblue;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .block-float {
+                float: left;
+                background-color: lightcoral;
+                width: 200px;
+                height: 100px;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .container {
+                border: 1px solid black;
+                width: 500px;
+                margin-bottom: 20px;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+        <title>Float Example</title>
+    </head>
+    <body>
+        <div class="container clearfix">
+            <span class="inline-float">Inline Float 1</span>
+            <span class="inline-float">Inline Float 2</span>
+            <span class="inline-float">Inline Float 3</span>
+        </div>
+
+        <div class="container clearfix">
+            <div class="block-float">Block Float 1</div>
+            <div class="block-float">Block Float 2</div>
+            <div class="block-float">Block Float 3</div>
+        </div>
+    </body>
+</html>

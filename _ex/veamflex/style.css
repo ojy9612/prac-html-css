@@ -1,0 +1,141 @@
+/* Reset */
+body, p {
+    margin: unset;
+    padding: unset;
+}
+
+ul, li {
+    margin: unset;
+    padding: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Layouts */
+.l_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-shadow: inset 0 0 4px red;
+}
+
+/* Typography */
+:root {
+    font-family: arial;
+}
+
+/* Components */
+body {
+    color: #999;
+    background-color: #111;
+}
+
+.header {
+    background-color: #333;
+}
+
+.header-inside {
+    box-shadow: inset 0 0 20px blue;
+    display: flex;
+    align-items: center;
+    height: 180px;
+    gap: 30px;
+}
+
+.logo {
+    box-shadow: inset 0 0 20px red;
+    width: 200px;
+}
+
+.description {
+    box-shadow: inset 0 0 20px red;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.description::before {
+    content: "";
+    width: 64px;
+    height: 1px;
+    background-color: currentColor;
+}
+
+.anger {
+    width: 140px;
+    box-shadow: inset 0 0 20px red;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.contents {
+    background-color: #000;
+    padding: 24px 0;
+}
+
+.container {
+    box-shadow: inset 0 0 30px gold;
+    display: flex;
+    gap: 24px;
+    min-height: 848px;
+}
+
+.container-main {
+    box-shadow: inset 0 0 30px dodgerblue;
+    flex-grow: 1;
+    flex-basis: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.container-main-sec {
+    flex-basis: 320px;
+    min-height: 412px;
+    background-color: #222222;
+    border-radius: 0 0 16px 16px;
+}
+
+.container-main-sec img {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.container-main-sec h2 {
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #EBB3BB;
+}
+
+.container-main-sec p {
+    margin: 12px 0 0 20px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.container-main-sec-button {
+    background-color: #111;
+    text-align: center;
+    line-height: 48px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #FF0000;
+    margin: 30px 10px 8px;
+    border-radius: 10px;
+}
+
+.container-sidebar {
+    box-shadow: inset 0 0 30px orangered;
+    flex-basis: 168px;
+    height: 340px;
+}

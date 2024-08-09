@@ -1,0 +1,65 @@
+/* Reset */
+body, p {
+    margin: unset;
+    padding: unset;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Layouts */
+.l_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    box-shadow: inset 0 0 4px red;
+}
+
+.header-inside {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    gap: 30px;
+}
+
+.header .header-logo {
+    width: 200px;
+}
+
+.header p {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.header p:before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+
+}
+
+.header .header-cover {
+    width: 140px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+/* Typography */
+:root {
+    font-family: arial;
+}
+
+/* Components */
+body {
+    color: #999;
+    background-color: #111;
+}
+
+.contents {
+    background-color: #000;
+}

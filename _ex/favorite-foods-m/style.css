@@ -1,0 +1,214 @@
+/* Reset */
+body,ul, li  {
+    margin: unset;
+    padding: unset;
+}
+
+p, div, h1, h2 {
+    margin: unset;
+    padding: unset;
+
+    font-size: unset;
+    font-weight: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Typography */
+:root {
+    font-family: "Arial", sans-serif;
+}
+
+.c_orange { color: #ff6600}
+.c_green { color: #17A651}
+.c_blue { color: #0075FF}
+
+/* Components */
+.l_col_12_12 { width: 100%; }
+.l_col_11_12 { width: 91.66666667%; }
+.l_col_10_12 { width: 83.33333333%; }
+.l_col_9_12  { width: 75%; }
+.l_col_8_12  { width: 66.66666667%; }
+.l_col_7_12  { width: 58.33333333%; }
+.l_col_6_12  { width: 50%; }
+.l_col_5_12  { width: 41.66666667%; }
+.l_col_4_12  { width: 33.33333333%; }
+.l_col_3_12  { width: 25%; }
+.l_col_2_12  { width: 16.66666667%; }
+.l_col_1_12  { width: 8.33333333%; }
+
+body {
+    background-color: #d9d9d9;
+}
+
+.l_wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.l_header {
+    background-color: #F4F4F4;
+    min-width: 300px;
+}
+
+.header {
+    min-height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 100px;
+}
+
+.header h1 {
+    color: #ff6600;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.l_contents {
+    margin: 0 auto;
+}
+
+.contents {
+    margin: 30px 0;
+}
+
+.l_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    row-gap: 30px;
+    justify-content: center;
+}
+
+.l_col {
+    /*flex-basis: 300px;*/
+    min-width: 330px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container {
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 12px;
+}
+
+.container-header {
+    position: relative;
+}
+
+.container-header img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.container-header .overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 80%);
+    width: fit-content;
+
+    border-radius: 0 12px 0 0;
+}
+
+.container-header .overlay h2 {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-text-wrapper {
+    padding: 20px;
+    height: 120px;
+    background-color: white;
+
+    -webkit-box-orient: vertical; /* 상자의 방향을 수직으로 설정 */
+}
+
+.container-text-wrapper p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4em;
+
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 표시 */
+    display: -webkit-box; /* Flexbox의 상자 모델 사용 */
+    -webkit-box-orient: vertical; /* 상자의 방향을 수직으로 설정 */
+    -webkit-line-clamp: 6; /* 보여질 최대 줄 수를 설정 */
+}
+
+.container-tag {
+    background-color: #f4f4f4;
+    border-radius: 0 0 12px 12px;
+}
+
+.container-tag ul {
+    height: 74px;
+    padding: 5px 18px;
+    box-sizing: border-box;
+
+    /* 2줄까지는 호환되는데 3줄은 어캐 막나요? */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.container-tag ul li {
+    background-color: currentColor;
+    padding: 3px 8px;
+    border-radius: 48px;
+}
+
+.container-tag-box {
+    color: white;
+
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.container-tag-box .shap {
+    color: rgb(255 255 255 / 50%);
+}
+
+
+.footer {
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 0.24em;
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 600px) {
+    .header {
+        min-height: 244px;
+
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .header img {
+        height: 100px;
+    }
+
+    .header h1 {
+        color: #ff6600;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
