@@ -60,39 +60,39 @@ body {
     padding: 12px 0;
 }
 
-.animal-contents .section {
+.animal-contents .section_c {
     background-color: white;
     margin: 20px;
     padding: 20px;
 }
 
-.animal-contents .section.information {
+.animal-contents .section_c.information {
     background-image: url("images/icon-information.png");
     background-repeat: no-repeat;
     background-position: right 30px center;
 }
 
-.animal-contents .section.skill {
+.animal-contents .section_c.skill {
     background-image: url("images/icon-skills.png");
     background-repeat: no-repeat;
     background-position: right 30px center;
 }
 
-.animal-contents .section h2 {
+.animal-contents .section_c h2 {
     color: deeppink;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.animal-contents .section .list li {
+.animal-contents .section_c .list li {
     color: #999;
     border-left: 5px solid #ddd;
     padding: 4px 10px;
     transition: all .4s;
 }
 
-.animal-contents .section .list li:hover {
+.animal-contents .section_c .list li:hover {
     border-color: lightpink;
     color: deeppink;
     font-size: 18px;

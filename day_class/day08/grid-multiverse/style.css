@@ -17,7 +17,7 @@ body {
   background-color: #222;
 }
 
-.section {
+.section_c {
   max-width: 800px;
   margin: 60px auto;
   border: 8px solid dodgerblue;
@@ -25,7 +25,7 @@ body {
   border-radius: 12px;
 }
 
-.section h2 {
+.section_c h2 {
   color: dodgerblue;
   margin-bottom: 20px;
 }

@@ -140,7 +140,7 @@ body {
 .container-text-wrapper p {
     color: #666;
     font-size: 14px;
-    line-height: 1.4em;
+    line-height: 1.4;
 
     overflow: hidden; /* 넘치는 텍스트를 숨김 */
     text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 표시 */
