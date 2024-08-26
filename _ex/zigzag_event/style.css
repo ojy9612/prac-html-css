@@ -305,7 +305,6 @@ img {
 .card-main p {
     padding-bottom: 20px;
     color: var(--color-black-30);
-    min-height: 110px;
 
     font-size: 0.875rem;
     line-height: 1.57143;

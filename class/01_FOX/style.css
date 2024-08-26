@@ -1,0 +1,50 @@
+/* CSS Resets */
+body, p {
+    margin: unset;
+}
+
+h1 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* Design */
+:root {
+    font-family: 'arial';
+}
+
+body {
+    background-image: url(images/bg.png);
+}
+
+.wrapper {
+    width: 500px;
+    margin: 60px auto;
+}
+
+.animal-cover {
+    display: block;
+    margin: 0 auto;
+}
+
+.animal-contents {
+    background-image: url(images/green.png);
+    background-repeat: repeat-x;
+    background-color: #9C6035;
+    color: #E8BC9C;
+    padding: 60px 20px 48px;
+    border-radius: 0 0 30px 30px;
+    border-bottom: 10px solid#46260E;
+}
+
+.animal-contents h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
