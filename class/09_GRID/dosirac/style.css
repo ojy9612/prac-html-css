@@ -1,0 +1,62 @@
+/* Reset */
+body, p {
+  margin: unset;
+}
+
+h2 {
+  font-size: unset;
+  margin: unset;
+}
+
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Components */
+body {
+  background-color: brown;
+}
+
+.tong {
+  border: 10px solid blue;
+  display: grid;
+  gap: 20px;
+
+  /* 200px 기준에서 repeat의 숫자가 결정 */
+  grid-template-columns: repeat( auto-fit, 200px );
+
+  /* 200px 기준에서 repeat의 숫자가 결정 + 1fr */
+  grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+}
+
+.kan {
+  border-radius: 20px;
+  border: 10px solid maroon;
+  background-color: skyblue;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.kan:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.kan h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  position: relative;
+  color: #003b74;
+}
+
+.kan h2::before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1.2em;
+  margin: -12px;
+  background-color: rgb( 0 59 116 / 0.1 );
+}

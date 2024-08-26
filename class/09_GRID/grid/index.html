@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid</title>
+    <style>
+      body {
+        background-color: brown;
+      }
+
+      .playground {
+        border: 10px solid maroon;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: skyblue;
+        padding: 10px;
+
+        width: 980px;
+        height: 500px;
+        display: grid;
+
+        /* 두개의 칼럼 예약 : minmax( 0, 너비 ) 개념으로, min-width: 0 초기화 해주는 기법 구현, 그리드 컨테이너에서 안정성 확보  */
+        /*
+        grid-template-columns: minmax( 0, 1fr ) minmax( 0, 1fr );
+        */
+        grid-template-columns: repeat( 2, minmax( 0, 1fr ) );
+
+        /* 두개의 로우 예약 : minmax( 0, 높이 ) 개념으로, min-height: 0 초기화 해주는 기법 구현, 그리드 컨테이너에서 안정성 확보  */
+        grid-template-rows: repeat( 2, minmax( 0, 1fr ) );
+
+        /* 원룸(가상 컨테이닝블록) 내부의 .frog가 최대치로 */
+        justify-items: stretch;
+        align-items: stretch;
+
+        /* column이 두개로 예약 되어져 있기 때문에 grid-auto-columns의 지정값은 휴업이당 */
+        grid-auto-columns: 100px;
+
+        /* row가 두개로 예약 되어져 있기 때문에 grid-auto-rows의 지정값은 휴업이당 -> 오! 일하자! */
+        grid-auto-rows: 100px;
+      }
+
+      .frog {
+        background-color: mediumseagreen;
+        color: lime;
+        font-size: 40px;
+        border: 6px solid green;
+        border-radius: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="playground">
+      <div class="frog">Frog</div>
+      <div class="frog"><img src="images/acgn-height.png"></div>
+      <div class="frog">Frog</div>
+      <div class="frog"><img src="images/acgn-width.png"></div>
+    </div>
+
+  </body>
+</html>

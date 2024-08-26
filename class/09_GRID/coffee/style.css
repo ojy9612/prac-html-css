@@ -1,0 +1,48 @@
+/* Reset */
+body {
+  margin: unset;
+}
+
+/* Typography */
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Components */
+.container {
+  box-shadow: inset 0 0 20px red;
+  display: grid;
+
+  /* 전체 그리드 컨테이너에서 가로 세로 중앙 정렬 */
+  justify-content: center;
+  align-content: center;
+
+  /* 창 크기 작아졌을때 전후좌우 모두 padding확보 */
+  padding: 40px;
+
+  /* 그냥 height는 고정 높이라 내부 콘텐츠가 height보다 많아졌을때 역시나 또 넘처흐름 -> 내부 콘텐츠가 컨테이너보다 많아지면 전체 높이가 자연스럽게 늘어나게 min-height:100vh로 변경 */
+  min-height: 100vh;
+
+  /* min-height: 100vh에 상하단 패딩이 포함되면 스크롤바가 생기니, 100vh에 상하단 패딩이 포함될 수 있게끔 조정 */
+  box-sizing: border-box;
+
+  /*
+    첫번째 column은 244px 고정 
+    두번째 column은 
+      min-width도 0으로 초기화, 
+      max-width: 830px으로 하여 상황에 따라 작아질 수 있게 만듦
+        -> 즉 고정값이 아니게! 
+  */
+  grid-template-columns: 244px minmax( 0, 830px );
+
+  /* rows도 minmax개념을 도입하여 완성도를 높임 */
+  grid-template-rows: minmax( 600px, auto );
+}
+
+.sidebar {
+  box-shadow: inset 0 0 20px red;
+}
+
+.contents {
+  box-shadow: inset 0 0 20px blue;
+}
